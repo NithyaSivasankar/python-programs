@@ -1,0 +1,12 @@
+def prime(x):
+    n=x//2
+    isboolean=False
+    if x==2 or x==3:
+        return True
+    for i in range(2,n+1):
+        if x%i==0:
+            return isboolean
+        else:
+            return True
+x=int(input("enter the val:"))
+print(prime(x))

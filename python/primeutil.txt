@@ -1,0 +1,13 @@
+lo=int(input("enetr the val1:"))
+up=int(input("enter the val2:"))
+
+for num in range(lo,up+1):
+    isbool=True
+    if(num<2):
+        continue
+    for i in range(2,num):
+        if(num%i==0):
+            isbool=False
+            break
+    if(isbool==True):
+        print(num)

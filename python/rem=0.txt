@@ -1,0 +1,17 @@
+rem=0
+ans=""
+flag=0
+for i in range(1000,1050):
+    print(i)
+    while i>0:
+        rem=i%10
+        if rem%2==0:
+            ans+=str(rem)
+        else:
+            flag+=1
+        i=i/10
+        print(i)
+if flag==0:
+    print(ans)
+            
+        
